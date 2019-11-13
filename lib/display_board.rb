@@ -10,7 +10,7 @@ def display_board
   counter = 0
   board.each do |row|
     puts row.join("|")
-    when counter < 2
+    if counter < 2
       puts dashes
       counter += 1
     end
