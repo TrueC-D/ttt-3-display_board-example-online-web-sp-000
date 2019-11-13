@@ -9,7 +9,7 @@ def display_board
   board = [row1, row2, row3]
 
   board.each do |row|
-    @counter = 0
+    counter = 0
     puts row.join("|")
     while counter < 2
       puts dashes
