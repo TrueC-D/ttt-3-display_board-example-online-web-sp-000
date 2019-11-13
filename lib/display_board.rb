@@ -7,11 +7,10 @@ def display_board
   row3 = ["   ", "   ", "   "]
   dashes = "-----------"
   board = [row1, row2, row3]
-
+  counter = 0
   board.each do |row|
-    counter = 0
     puts row.join("|")
-    while counter < 2
+    when counter < 2
       puts dashes
       counter += 1
     end
